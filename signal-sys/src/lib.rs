@@ -61,6 +61,8 @@ extern {
     pub fn sigemptyset(set: *mut sigset_t) -> libc::c_int;
     pub fn sigfillset(set: *mut sigset_t) -> libc::c_int;
     pub fn sigismember(set: *const sigset_t, signo: libc::c_int) -> libc::c_int;
+
+    pub fn pthread_sigmask(how: libc::c_int, set: *const sigset_t, oset: *mut sigset_t) -> libc::c_int;
 }
 
 

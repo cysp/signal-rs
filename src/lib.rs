@@ -10,3 +10,8 @@ pub use sigset::{
     SigSet,
     SigSetBuilder,
 };
+
+pub use pthread_sigmask::{
+    SigMaskHow,
+    pthread_sigmask,
+};
